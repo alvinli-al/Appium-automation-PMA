@@ -55,7 +55,7 @@ public class Main {
 
         System.out.println("Welcome to the Job List");
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='0']/descendant::android.view.View[@content-desc='213 7TH ST, PETALUMA ,CA 94952' and @index='4']")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/descendant::android.view.View[@content-desc='223 2ND ST, PETALUMA ,CA 94952' and @index='4']")));
 
         try {
             Thread.sleep(2000);
@@ -206,8 +206,11 @@ public class Main {
             e.printStackTrace();
         }
 
-        driver.findElementByXPath("//android.view.View[@index='1']/descendant::android.widget.Button[@content-desc='close ']").click();
-        System.out.println("Close");
+//        driver.findElementByXPath("//android.view.View[@index='1']/descendant::android.widget.Button[@content-desc='close ']").click();
+//        System.out.println("Close");
+
+        driver.tap(1,1100,200,0);
+        System.out.println("Clicking the result button");
 
         try{
             Thread.sleep(2000);
@@ -215,7 +218,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='0']/descendant::android.view.View[@content-desc='213 7TH ST, PETALUMA ,CA 94952' and @index='4']"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/descendant::android.view.View[@content-desc='223 2ND ST, PETALUMA ,CA 94952' and @index='4']"))).click();
         System.out.println("Let inspection items clickable");
 
         try{
@@ -224,7 +227,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='0']/descendant::android.view.View[@content-desc='213 7TH ST, PETALUMA ,CA 94952' and @index='4']"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/descendant::android.view.View[@content-desc='223 2ND ST, PETALUMA ,CA 94952' and @index='4']"))).click();
         System.out.println("Clicked Inspection");
 
         try {
@@ -286,42 +289,42 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-//
-//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/android.widget.Button[@content-desc='more ']"))).click();
-//        System.out.println("Clicked more");
-//
-//        try {
-//            Thread.sleep(3000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/descendant::android.widget.Image[@content-desc='grid']"))).click();
-//        System.out.println("Clicked grid");
-//
-//        try {
-//            Thread.sleep(3000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/android.widget.Button[@content-desc='more ']"))).click();
-//        System.out.println("Clicked more");
-//
-//        try {
-//            Thread.sleep(3000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/descendant::android.view.View[@content-desc='List' and @index='2']"))).click();
-//        System.out.println("Clicked list");
-//
-//        try {
-//            Thread.sleep(5000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/android.widget.Button[@content-desc='more ']"))).click();
+        System.out.println("Clicked more");
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/descendant::android.widget.Image[@content-desc='grid']"))).click();
+        System.out.println("Clicked grid");
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/android.widget.Button[@content-desc='more ']"))).click();
+        System.out.println("Clicked more");
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/descendant::android.view.View[@content-desc='List' and @index='2']"))).click();
+        System.out.println("Clicked list");
+
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 //
 //        wait.until(ExpectedConditions.elementToBeClickable(By.name("pmaQQ_Photo20161008154049"))).click();
 //        System.out.println("Image preview");
@@ -349,23 +352,37 @@ public class Main {
         wait.until(ExpectedConditions.elementToBeClickable(By.name(" Checklists"))).click();
         System.out.println("Clicked Checklists section");
 
-//        try {
-//            Thread.sleep(4000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='2']/descendant::android.view.View[@content-desc='Alvin_Checklist']"))).click();
-//        System.out.println("Clicked a checklist");
-//
-//        try {
-//            Thread.sleep(3000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//
-//        back(true);
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='2']/descendant::android.view.View[@content-desc='Alvin_Checklist']"))).click();
+        System.out.println("Clicked a checklist");
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         back(true);
+        back(true);
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        swipe_up_down(true);
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         wait.until(ExpectedConditions.elementToBeClickable(By.name(" Conditions"))).click();
         System.out.println("Clicked Conditions section");
@@ -375,8 +392,6 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-        swipe_up_down(true);
 
         back(true);
 
@@ -431,7 +446,7 @@ public class Main {
 //        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/descendant:android.view.View[@content-desc='Residential Building 1']"))).click();
 //        System.out.println("Clicked Related Record");
 
-        driver.findElementByXPath("//android.view.View[@index='1']/descendant:android.view.View[@content-desc='Residential Building 1']").click();
+        driver.findElementByXPath("//android.view.View[@index='1']/descendant::android.view.View[@content-desc='Residential Building 1']").click();
         System.out.println("Clicked Related Record");
 
         try {
@@ -542,17 +557,17 @@ public class Main {
         int startx = (int) (size.width * 0.70);
         int endx = (int) (size.width * 0.10);
         int starty = size.height / 2;
-        driver.swipe(startx, starty, endx, starty, 3000); // it swipes from right to left
+        driver.swipe(startx, starty, endx, starty, 1000); // it swipes from right to left
 //        driver.swipe(endx, starty, startx, starty, 2000); // it swipes from left to right
     }
 
     public static void swipe_element(boolean swipe_e) {
-        if (driver.findElement(By.xpath("//android.view.View[@index='0']/descendant::android.view.View[@content-desc='213 7TH ST, PETALUMA ,CA 94952' and @index='4']")).isDisplayed()) {
+        if (driver.findElement(By.xpath("//android.view.View[@index='1']/descendant::android.view.View[@content-desc='223 2ND ST, PETALUMA ,CA 94952' and @index='4']")).isDisplayed()) {
             size = driver.manage().window().getSize();
             int x_start = (int) (size.width * 0.80);
             int x_end = (int) (size.width * 0.20);
             int y = 694;
-            driver.swipe(x_start, y, x_end, y, 3000);
+            driver.swipe(x_start, y, x_end, y, 1000);
             System.out.println("displayed");
         } else {
             System.out.println("no");
@@ -568,7 +583,7 @@ public class Main {
         int startx = size.width / 2;
 
         //Swipe from Bottom to Top.
-        driver.swipe(startx, starty, startx, endy, 2000);
+        driver.swipe(startx, starty, startx, endy, 3000);
         //Swipe from Top to Bottom.
 //        driver.swipe(startx, endy, startx, starty, 3000);
     }
