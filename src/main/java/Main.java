@@ -55,7 +55,7 @@ public class Main {
 
         System.out.println("Welcome to the Job List");
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/descendant::android.view.View[@content-desc='223 2ND ST, PETALUMA ,CA 94952' and @index='4']")));
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='3']/descendant::android.view.View[@content-desc='21 10TH ST, PETALUMA ,CA 94952' and @index='4']")));
 
         try {
             Thread.sleep(2000);
@@ -218,7 +218,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/descendant::android.view.View[@content-desc='223 2ND ST, PETALUMA ,CA 94952' and @index='4']"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='3']/descendant::android.view.View[@content-desc='21 10TH ST, PETALUMA ,CA 94952' and @index='4']"))).click();
         System.out.println("Let inspection items clickable");
 
         try{
@@ -227,7 +227,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='1']/descendant::android.view.View[@content-desc='223 2ND ST, PETALUMA ,CA 94952' and @index='4']"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@index='3']/descendant::android.view.View[@content-desc='21 10TH ST, PETALUMA ,CA 94952' and @index='4']"))).click();
         System.out.println("Clicked Inspection");
 
         try {
@@ -562,7 +562,7 @@ public class Main {
     }
 
     public static void swipe_element(boolean swipe_e) {
-        if (driver.findElement(By.xpath("//android.view.View[@index='1']/descendant::android.view.View[@content-desc='223 2ND ST, PETALUMA ,CA 94952' and @index='4']")).isDisplayed()) {
+        if (driver.findElement(By.xpath("//android.view.View[@index='3']/descendant::android.view.View[@content-desc='21 10TH ST, PETALUMA ,CA 94952' and @index='4']")).isDisplayed()) {
             size = driver.manage().window().getSize();
             int x_start = (int) (size.width * 0.80);
             int x_end = (int) (size.width * 0.20);
